@@ -1,0 +1,20 @@
+public class FaturaTeste {
+
+    public static void main(String[] args) {
+        Fatura fatura = new Fatura("123", "Mouse óptico", 2, 35.50);
+
+        System.out.println("Número: " + fatura.getNumero());
+        System.out.println("Descrição: " + fatura.getDescricao());
+        System.out.println("Quantidade: " + fatura.getQuantidade());
+        System.out.println("Preço: " + fatura.getPreco());
+        System.out.println("Total: " + fatura.getTotalFatura());
+
+        fatura.setQuantidade(-3);
+        fatura.setPreco(-20.0);
+
+        System.out.println("Quantidade após setQuantidade(-3): " + fatura.getQuantidade());
+        System.out.println("Preço após setPreco(-20.0): " + fatura.getPreco());
+        System.out.println("Total após setQuantidade(-3) e setPreco(-20.0): " + fatura.getTotalFatura());
+    }
+}
+
