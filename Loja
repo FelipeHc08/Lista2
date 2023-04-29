@@ -1,0 +1,37 @@
+/*
+
+
+Crie classes para uma loja que venda livros, CDs e DVDs. Crie um método que imprima: 
+
+• Para livros: nome, preço e autor;
+
+• Para CDs: nome, preço e número de faixas;
+
+• Para DVDs: nome, preço e duração.
+
+Crie uma classe Loja com o método main() que adicione 5 produtos diferentes (a sua escolha).
+
+*/
+
+
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         Livro livro1 = new Livro("A Menina que Roubava Livros", 25.90, "Markus Zusak");
+        Livro livro2 = new Livro("O Nome do Vento", 39.90, "Patrick Rothfuss");
+        CD cd1 = new CD("Thriller", 29.90, 9);
+        CD cd2 = new CD("The Dark Side of the Moon", 34.90, 10);
+        DVD dvd1 = new DVD("Jurassic Park", 19.90, 127);
+        
+        System.out.println("Produtos da Loja:");
+        livro1.imprimeDados();
+        livro2.imprimeDados();
+        cd1.imprimeDados();
+        cd2.imprimeDados();
+        dvd1.imprimeDados();
+    }
+    
+}
